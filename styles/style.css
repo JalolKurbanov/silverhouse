@@ -1,0 +1,134 @@
+@Import 'fonts.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header{
+    padding-top: 50px;
+}
+.header-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.header-logo img{
+    margin-bottom: 80px;
+}
+.header-content img{
+    width: 100%;
+}
+ul a{
+    color: #8C8A8A;
+    font-size: 18px;
+}
+.main-box{
+    display: flex;
+    gap: 30px;
+}
+main .left,main .right{
+    background: var(--grey, #F0F0F0);
+}
+main h2{
+    color: #4581B7;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+main p,main a{
+    color: #808080;
+    line-height: 27px;
+}
+main .left{
+    width: 100%;
+    height: auto;
+    padding: 50px 95px 50px 40px;
+}
+main .right{
+    width: 100%;
+    height: auto;
+    padding: 50px 15px 95px 40px;
+}
+main .right p{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer-box{
+    background: var(--grey, #F0F0F0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.footer-box p{
+    color: #808080;
+}
+.footer-box a{
+    color: #808080;
+    font-size: 25px;
+    font-weight: 700;
+}
+ul a:hover,footer .right a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+a:hover{
+    color: black;
+}
+@media (max-width:800px) {
+    .header-logo img{
+        margin-bottom: 40px;
+    }
+    header ul{
+        gap: 15px;  
+        justify-content: center;
+    }
+    header ul a{
+        font-size: 16px;
+    }
+    .main-box{
+        flex-direction: column;
+    }
+}
+@media (max-width:426px) {
+    main .left{
+        padding-right: 25px;
+    }
+    main .left p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .footer-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-box p{
+        font-size: 14px;
+    }
+}
